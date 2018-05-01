@@ -14,4 +14,48 @@
 // Variables that will be needed for this game
 
 var jazzPlayers = ["Rubio", "Gobert", "Mitchell", "Favors", "Ingles"];
+var newName = "";
+
+
+
+var winCount = 0;
+var lossCount = 0;
+var guessesLeft = 0;
+
+
+function startGame() {
+
+
+    newName = jazzPlayers[Math.floor(Math.random() * jazzPlayers.length)];
+    splitWord = newName.split("");
+    howMany = splitWord.length;
+
+
+    underlines = [];
+
+    for (var i = 0; i < howMany; i++) {
+        underlines.push("_");
+
+        console.log(newName);
+        console.log(splitWord);
+        console.log(howMany);
+        console.log(underlines);
+
+    }
+
+}
+
+
+
+startGame();
+
+
+
+
+
+// pick up user's input to keyboard
+document.onkeyup = function (event) {
+    var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+    console.log(userGuess);
+}
 

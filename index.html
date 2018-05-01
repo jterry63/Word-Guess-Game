@@ -6,14 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman: Utah Jazz Edition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <div class="row" style="border-bottom: dashed white;">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <img src="assets/images/header.png" style="width: 620px; height: 203px;">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/guess.png" alt="Card image cap">
+                    <div class="card-body" style="background-color: transparent;">
+                        <p class="card-text" style="text-align: center;"> Guess this Utah Jazz Player</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/logo.png" style="height: 200px; width: 275px; margin-top: 30px;">
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header" style="padding: 1.75rem 1.25rem;">
 
-    <img src="assets/images/header.png" id="jazzHeader">
-    <h3 id="begin">Press any key to begin</h3>
+                        <li class="list-group-item">Guesses Remaining: 8</li>
+                        <li class="list-group-item">Guessed:</li>
+                        <li class="list-group-item">Wins:</li>
+                        <li class="list-group-item">Losses:</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div id="nameGuess" style="font-size: 100px; text-align: center;">_ _ _ _ _ _ _ _</div>
+
+        </div>
+    </div>
+
+
+
+
 
 </body>
 
