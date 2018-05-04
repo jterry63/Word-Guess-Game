@@ -51,7 +51,7 @@ function startGame() {
     document.getElementById("numGuesses").innerHTML = "Guesses Remaining:  " + guessesLeft;
     document.getElementById("winCounter").innerHTML = "Wins:  " + winCount;
     document.getElementById("lossCounter").innerHTML = "Losses:  " + lossCount;
-    document.getElementById("ifPlayerCorrect").innerHTML = ("GUESS THIS UTAH JAZZ PLAYER");
+
 
 
     console.log(newName);
@@ -99,7 +99,7 @@ function roundComplete() {
         document.getElementById("winCounter").innerHTML = "Wins: " + winCount;
         document.getElementById("wrongGuesses").innerHTML = "Guessed: ";
 
-        alert("YOU WIN!! It was " + newName);
+        alert("YOU WIN!!!! It was " + newName);
 
         startGame();
 
@@ -121,7 +121,6 @@ function roundComplete() {
 
 
 
-
 startGame();
 
 
@@ -137,6 +136,7 @@ document.onkeyup = function (event) {
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(userGuess);
     roundComplete();
+
 
     console.log(userGuess);
 }
